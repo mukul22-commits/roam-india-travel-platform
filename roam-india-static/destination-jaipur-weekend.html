@@ -1,80 +1,228 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="The Pink City Weekend — a sample 3-day India travel package from Roam India.">
-<title>The Pink City Weekend | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Pink City Weekend — a curated 3-day India holiday package from Roam India through Jaipur's forts and palaces.">
+  <title>The Pink City Weekend | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Discover</a>
-      <a href="packages.html">All escapes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <div class="breadcrumb"><a href="packages.html">All escapes</a> / Rajasthan</div>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
 
-  <section class="detail-hero">
-    <img src="assets/palace.png" alt="Illustrative travel landscape">
-    <div class="detail-copy">
-      <span class="eyebrow">Colour outside the lines</span>
-      <h1>The Pink City Weekend</h1>
-      <div class="location">Jaipur, Rajasthan</div>
-      <p>A short cultural escape through Jaipur’s architecture, markets and neighbourhoods.</p>
-      <div class="facts"><span>3 days / 2 nights</span><span>★ 4.7 sample rating</span><span>Culture</span></div>
-      <div class="price"><strong>₹7,900</strong><small>per person · sample price</small></div>
-      <div class="actions">
-        <a class="btn" href="contact.html?trip=jaipur-weekend">Enquire about this trip</a>
-        <a class="btn light" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20The%20Pink%20City%20Weekend">Email us ↗</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active" aria-current="page">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
       </div>
-      <p class="note">Simulated package. No payment or reservation. Artwork is illustrative.</p>
     </div>
-  </section>
+  </header>
 
-  <div class="detail-bottom">
-    <section>
-      <h2>Your journey, day by day</h2>
-      <div class="day"><span>1</span><div><strong>Day 1</strong><br>Arrive and explore local bazaars</div></div><div class="day"><span>2</span><div><strong>Day 2</strong><br>Discover forts and palace courtyards</div></div><div class="day"><span>3</span><div><strong>Day 3</strong><br>Breakfast and departure</div></div>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="destinations.html">Destinations</a> / <span>The Pink City Weekend</span>
+    </div>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero" aria-label="Package presentation">
+      <div class="detail-gallery">
+        <img src="assets/palace.png" alt="Ornate royal palace courtyards in Jaipur">
+        <span class="detail-gallery-badge badge badge-culture">Culture &amp; Heritage</span>
+      </div>
+
+      <div class="detail-copy">
+        <span class="eyebrow">Colour Outside the Lines</span>
+        <h1>The Pink City Weekend</h1>
+        <div class="detail-location">
+          <span>📍 Jaipur, Rajasthan · Western India</span>
+        </div>
+        <p class="detail-lead">A short, vibrant cultural escape through Jaipur’s grand architecture, bustling bazaars, and historic palace courtyards. Experience the grandeur of Amber Fort and the intricate facade of Hawa Mahal.</p>
+        
+        <div class="facts-bar">
+          <div class="fact-item">
+            <span>Duration</span>
+            <strong>3 Days / 2 Nights</strong>
+          </div>
+          <div class="fact-item">
+            <span>Rating</span>
+            <strong>★ 4.7</strong>
+          </div>
+          <div class="fact-item">
+            <span>Theme</span>
+            <strong>Culture</strong>
+          </div>
+          <div class="fact-item">
+            <span>Transport</span>
+            <strong>Private AC Sedan</strong>
+          </div>
+        </div>
+
+        <div class="detail-price-box">
+          <span class="price-tag">₹7,900</span>
+          <small>per person · Twin Sharing (incl. taxes)</small>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn btn-primary btn-lg" href="booking.html?package=jaipur-weekend">Book This Trip ↗</a>
+          <a class="btn btn-secondary btn-lg" href="compare.html">Compare Tours</a>
+        </div>
+      </div>
     </section>
-    <aside class="panel">
-      <h2>The little details</h2>
-      <strong>Sample package includes</strong>
-      <ul class="inclusions">
-        <li>2 nights of accommodation</li>
-        <li>Daily breakfast</li>
-        <li>Listed sightseeing activities</li>
-        <li>Transfers within the itinerary</li>
-      </ul>
-      <strong>Not included</strong>
-      <ul class="inclusions">
-        <li>Travel to and from the starting city</li>
-        <li>Personal expenses and optional activities</li>
-        <li>Lunch and dinner</li>
-      </ul>
-      <p class="note">This is a planning example. Hotel availability, operators and inclusions have not been verified for purchase.</p>
-    </aside>
-  </div>
 
-  <p class="note scope-note">All prices, ratings and itinerary details on this page are sample data for a college frontend project. No live availability, payments or real reservations are involved.</p>
-</main>
+    <!-- Detail Bottom -->
+    <div class="detail-layout">
+      <div>
+        
+        <!-- Day by Day Itinerary -->
+        <article class="panel">
+          <h2>Your Journey, Day by Day</h2>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-badge">1</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 1: Arrive &amp; Explore Historic Bazaars</span>
+                  <span class="timeline-tag">Arrival</span>
+                </div>
+                <p class="timeline-desc">Check-in at your heritage hotel. In the afternoon, head into the Pink City walled area to explore Johari Bazaar for silver jewelry and Bapu Bazaar for handcrafted textiles.</p>
+              </div>
+            </div>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+            <div class="timeline-item">
+              <div class="timeline-badge">2</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 2: Amber Fort, Hawa Mahal &amp; City Palace</span>
+                  <span class="timeline-tag">Grand Palaces</span>
+                </div>
+                <p class="timeline-desc">Ascend to the hilltop Amer Fort, visit the Sheesh Mahal (Mirror Palace), view Jal Mahal floating in Man Sagar Lake, and tour City Palace museum.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">3</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 3: Rajasthani Breakfast &amp; Departure</span>
+                  <span class="timeline-tag">Departure</span>
+                </div>
+                <p class="timeline-desc">Enjoy a traditional breakfast of pyaaz kachoris and lassi, pick up last-minute bandhani souvenirs, and transfer to Jaipur airport or railway junction.</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Inclusions & Sidebar Panel -->
+      <aside>
+        <div class="panel">
+          <h3>The Little Details</h3>
+          <h4 style="color: var(--success); margin-top: 14px; margin-bottom: 8px;">Package Inclusions</h4>
+          <ul class="inclusions-list">
+            <li>2 nights accommodation in a boutique heritage hotel</li>
+            <li>Daily traditional Rajasthani breakfast</li>
+            <li>All sightseeing in private AC sedan</li>
+            <li>Local English/Hindi speaking licensed guide in Amer Fort</li>
+          </ul>
+
+          <h4 style="color: var(--error); margin-top: 20px; margin-bottom: 8px;">Not Included</h4>
+          <ul class="exclusions-list">
+            <li>Travel to and from Jaipur origin city</li>
+            <li>Camera fees and elephant/jeep ride at Amer Fort</li>
+            <li>Lunch and dinner</li>
+          </ul>
+
+          <hr style="border: 0; border-top: 1px dashed var(--line); margin: 20px 0;">
+          <a class="btn btn-lime btn-block btn-lg" href="booking.html?package=jaipur-weekend">Book This Package ↗</a>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

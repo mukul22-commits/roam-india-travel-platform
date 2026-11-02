@@ -1,80 +1,256 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A Royal Rajasthan Trail — a sample 5-day India travel package from Roam India.">
-<title>A Royal Rajasthan Trail | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A Royal Rajasthan Trail — a curated 5-day India travel package from Roam India covering Jaipur and Udaipur.">
+  <title>A Royal Rajasthan Trail | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Discover</a>
-      <a href="packages.html">All escapes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <div class="breadcrumb"><a href="packages.html">All escapes</a> / Rajasthan</div>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
 
-  <section class="detail-hero">
-    <img src="assets/palace.png" alt="Illustrative travel landscape">
-    <div class="detail-copy">
-      <span class="eyebrow">Stories in every stone</span>
-      <h1>A Royal Rajasthan Trail</h1>
-      <div class="location">Jaipur & Udaipur, Rajasthan</div>
-      <p>Explore ornate courtyards, colourful bazaars and lakeside evenings on a journey through Rajasthan.</p>
-      <div class="facts"><span>5 days / 4 nights</span><span>★ 4.8 sample rating</span><span>Culture</span></div>
-      <div class="price"><strong>₹16,400</strong><small>per person · sample price</small></div>
-      <div class="actions">
-        <a class="btn" href="contact.html?trip=royal-rajasthan">Enquire about this trip</a>
-        <a class="btn light" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20A%20Royal%20Rajasthan%20Trail">Email us ↗</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active" aria-current="page">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
       </div>
-      <p class="note">Simulated package. No payment or reservation. Artwork is illustrative.</p>
     </div>
-  </section>
+  </header>
 
-  <div class="detail-bottom">
-    <section>
-      <h2>Your journey, day by day</h2>
-      <div class="day"><span>1</span><div><strong>Day 1</strong><br>Arrive in Jaipur and explore the old city</div></div><div class="day"><span>2</span><div><strong>Day 2</strong><br>Visit Amber Fort and local markets</div></div><div class="day"><span>3</span><div><strong>Day 3</strong><br>Travel to Udaipur</div></div><div class="day"><span>4</span><div><strong>Day 4</strong><br>Discover palaces and lakeside walks</div></div><div class="day"><span>5</span><div><strong>Day 5</strong><br>Breakfast and departure</div></div>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="destinations.html">Destinations</a> / <span>A Royal Rajasthan Trail</span>
+    </div>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero" aria-label="Package presentation">
+      <div class="detail-gallery">
+        <img src="assets/palace.png" alt="Grand sandstone palace courtyard in Rajasthan">
+        <span class="detail-gallery-badge badge badge-culture">Culture &amp; Heritage</span>
+      </div>
+
+      <div class="detail-copy">
+        <span class="eyebrow">Echoes of Kings &amp; Queens</span>
+        <h1>A Royal Rajasthan Trail</h1>
+        <div class="detail-location">
+          <span>📍 Jaipur &amp; Udaipur, Rajasthan · Western India</span>
+        </div>
+        <p class="detail-lead">Discover Rajasthan's regal majesty across five curated days. From the sandstone battlements of Amer Fort and Hawa Mahal in the Pink City to the shimmering waters and white marble havelis of Lake Pichola in Udaipur.</p>
+        
+        <div class="facts-bar">
+          <div class="fact-item">
+            <span>Duration</span>
+            <strong>5 Days / 4 Nights</strong>
+          </div>
+          <div class="fact-item">
+            <span>Rating</span>
+            <strong>★ 4.8</strong>
+          </div>
+          <div class="fact-item">
+            <span>Theme</span>
+            <strong>Culture</strong>
+          </div>
+          <div class="fact-item">
+            <span>Stay Type</span>
+            <strong>Heritage Haveli</strong>
+          </div>
+        </div>
+
+        <div class="detail-price-box">
+          <span class="price-tag">₹16,400</span>
+          <small>per person · Twin Sharing (incl. taxes)</small>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn btn-primary btn-lg" href="booking.html?package=royal-rajasthan">Book This Trip ↗</a>
+          <a class="btn btn-secondary btn-lg" href="compare.html">Compare Tours</a>
+        </div>
+      </div>
     </section>
-    <aside class="panel">
-      <h2>The little details</h2>
-      <strong>Sample package includes</strong>
-      <ul class="inclusions">
-        <li>4 nights of accommodation</li>
-        <li>Daily breakfast</li>
-        <li>Listed sightseeing activities</li>
-        <li>Transfers within the itinerary</li>
-      </ul>
-      <strong>Not included</strong>
-      <ul class="inclusions">
-        <li>Travel to and from the starting city</li>
-        <li>Personal expenses and optional activities</li>
-        <li>Lunch and dinner</li>
-      </ul>
-      <p class="note">This is a planning example. Hotel availability, operators and inclusions have not been verified for purchase.</p>
-    </aside>
-  </div>
 
-  <p class="note scope-note">All prices, ratings and itinerary details on this page are sample data for a college frontend project. No live availability, payments or real reservations are involved.</p>
-</main>
+    <!-- Detail Bottom -->
+    <div class="detail-layout">
+      <div>
+        
+        <!-- Day by Day Itinerary -->
+        <article class="panel">
+          <h2>Your Journey, Day by Day</h2>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-badge">1</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 1: Arrive in Jaipur &amp; Heritage Check-in</span>
+                  <span class="timeline-tag">Arrival</span>
+                </div>
+                <p class="timeline-desc">Arrive in the Pink City. Settle into your boutique haveli hotel, enjoy a welcome glass of spiced buttermilk, and take an evening stroll around Jal Mahal lake.</p>
+              </div>
+            </div>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+            <div class="timeline-item">
+              <div class="timeline-badge">2</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 2: Amer Fort, Hawa Mahal &amp; Bazaars</span>
+                  <span class="timeline-tag">Forts &amp; Craft</span>
+                </div>
+                <p class="timeline-desc">Ascend to majestic Amer Fort with a licensed historian guide. Photograph Hawa Mahal's honeycomb windows and explore traditional block-printing artisans in Sanganer.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">3</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 3: Scenic Drive to Udaipur (City of Lakes)</span>
+                  <span class="timeline-tag">Transit</span>
+                </div>
+                <p class="timeline-desc">Drive across the Aravalli hills to romantic Udaipur. Check into your lakeside hotel overlooking Lake Pichola, and attend an evening Dharohar folk dance show at Bagore Ki Haveli.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">4</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 4: City Palace &amp; Sunset Boat Cruise</span>
+                  <span class="timeline-tag">Lake Cruise</span>
+                </div>
+                <p class="timeline-desc">Tour the sprawling Udaipur City Palace complex. In the late afternoon, embark on an exclusive boat cruise around Jag Mandir island with sunset reflections across the water.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">5</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 5: Royal Breakfast &amp; Departure</span>
+                  <span class="timeline-tag">Departure</span>
+                </div>
+                <p class="timeline-desc">Relish a lavish breakfast on the terrace, pick up miniature Mewar paintings, and transfer to Maharana Pratap Airport (UDR) for your return flight.</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Inclusions & Sidebar Panel -->
+      <aside>
+        <div class="panel">
+          <h3>The Little Details</h3>
+          <h4 style="color: var(--success); margin-top: 14px; margin-bottom: 8px;">Package Inclusions</h4>
+          <ul class="inclusions-list">
+            <li>4 nights stay (2 nights Jaipur haveli + 2 nights Udaipur lakeside hotel)</li>
+            <li>Daily traditional breakfast + 1 authentic Rajasthani dinner</li>
+            <li>Lake Pichola sunset boat cruise tickets in Udaipur</li>
+            <li>Dedicated AC sedan with chauffeur for the entire circuit</li>
+          </ul>
+
+          <h4 style="color: var(--error); margin-top: 20px; margin-bottom: 8px;">Not Included</h4>
+          <ul class="exclusions-list">
+            <li>Interstate flight/train tickets into Jaipur and out of Udaipur</li>
+            <li>Monument camera and videography permits</li>
+            <li>Personal shopping expenses and tips</li>
+          </ul>
+
+          <hr style="border: 0; border-top: 1px dashed var(--line); margin: 20px 0;">
+          <a class="btn btn-lime btn-block btn-lg" href="booking.html?package=royal-rajasthan">Book This Package ↗</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Scope Note -->
+    <p class="scope-note">
+      <strong>Academic Project Scope:</strong> All prices, ratings, and itinerary details on this page are sample data for GLA University frontend mini-project evaluation.
+    </p>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Sample Itineraries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Planning &amp; Booking</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Book a Tour</a></li>
+            <li><a href="payment.html">Payment Demo</a></li>
+            <li><a href="booking-confirmation.html">Booking Confirmation</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Project</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Project &amp; Team</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiries</a></li>
+            <li><span class="text-muted">Supervisor: Satyaprakash Singh</span></li>
+            <li><span class="text-muted">Group 9 · B.Tech CSE 3rd Year</span></li>
+            <li><span class="text-muted">GLA University, Mathura</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India · Developed for Academic Evaluation at GLA University, Mathura. Frontend Prototype (HTML5 + CSS3).</p>
+        <p>All prices (INR), itineraries, and reviews are illustrative demo content. No real financial transactions are executed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

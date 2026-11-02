@@ -1,80 +1,278 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kerala, at Your Own Pace — a sample 7-day India travel package from Roam India.">
-<title>Kerala, at Your Own Pace | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kerala, at Your Own Pace — a curated 7-day India travel package from Roam India through Munnar and Alleppey.">
+  <title>Kerala, at Your Own Pace | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Discover</a>
-      <a href="packages.html">All escapes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <div class="breadcrumb"><a href="packages.html">All escapes</a> / Kerala</div>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
 
-  <section class="detail-hero">
-    <img src="assets/backwaters.png" alt="Illustrative travel landscape">
-    <div class="detail-copy">
-      <span class="eyebrow">Take the scenic route</span>
-      <h1>Kerala, at Your Own Pace</h1>
-      <div class="location">Alleppey & Munnar, Kerala</div>
-      <p>Drift past coconut groves, wander tea-covered hills and make room for a slower kind of holiday.</p>
-      <div class="facts"><span>7 days / 6 nights</span><span>★ 4.9 sample rating</span><span>Nature</span></div>
-      <div class="price"><strong>₹22,500</strong><small>per person · sample price</small></div>
-      <div class="actions">
-        <a class="btn" href="contact.html?trip=kerala-slow-days">Enquire about this trip</a>
-        <a class="btn light" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20Kerala%2C%20at%20Your%20Own%20Pace">Email us ↗</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active" aria-current="page">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
       </div>
-      <p class="note">Simulated package. No payment or reservation. Artwork is illustrative.</p>
     </div>
-  </section>
+  </header>
 
-  <div class="detail-bottom">
-    <section>
-      <h2>Your journey, day by day</h2>
-      <div class="day"><span>1</span><div><strong>Day 1</strong><br>Arrive in Kochi</div></div><div class="day"><span>2</span><div><strong>Day 2</strong><br>Travel to Munnar</div></div><div class="day"><span>3</span><div><strong>Day 3</strong><br>Discover tea gardens</div></div><div class="day"><span>4</span><div><strong>Day 4</strong><br>A free day in the hills</div></div><div class="day"><span>5</span><div><strong>Day 5</strong><br>Travel to Alleppey</div></div><div class="day"><span>6</span><div><strong>Day 6</strong><br>Explore the backwaters</div></div><div class="day"><span>7</span><div><strong>Day 7</strong><br>Breakfast and departure</div></div>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> / <a href="destinations.html">Destinations</a> / <span>Kerala, at Your Own Pace</span>
+    </div>
+
+    <!-- Detail Hero -->
+    <section class="detail-hero" aria-label="Package presentation">
+      <div class="detail-gallery">
+        <img src="assets/backwaters.png" alt="Munnar rolling tea plantations and Alleppey houseboats">
+        <span class="detail-gallery-badge badge badge-nature">Nature &amp; Wellness</span>
+      </div>
+
+      <div class="detail-copy">
+        <span class="eyebrow">A Slower Rhythm</span>
+        <h1>Kerala, at Your Own Pace</h1>
+        <div class="detail-location">
+          <span>📍 Alleppey &amp; Munnar, Kerala · South India</span>
+        </div>
+        <p class="detail-lead">Seven restful days from the misty tea plantations and waterfalls of Munnar down to the calm, palm-shaded backwaters of Alleppey. Designed for those seeking tranquility, clean air, and restorative nature.</p>
+        
+        <div class="facts-bar">
+          <div class="fact-item">
+            <span>Duration</span>
+            <strong>7 Days / 6 Nights</strong>
+          </div>
+          <div class="fact-item">
+            <span>Rating</span>
+            <strong>★ 4.9</strong>
+          </div>
+          <div class="fact-item">
+            <span>Theme</span>
+            <strong>Nature</strong>
+          </div>
+          <div class="fact-item">
+            <span>Transport</span>
+            <strong>Private AC Cab</strong>
+          </div>
+        </div>
+
+        <div class="detail-price-box">
+          <span class="price-tag">₹22,500</span>
+          <small>per person · Twin Sharing (incl. taxes)</small>
+        </div>
+
+        <div class="detail-actions">
+          <a class="btn btn-primary btn-lg" href="booking.html?package=kerala-slow-days">Book This Trip ↗</a>
+          <a class="btn btn-secondary btn-lg" href="compare.html">Compare Tours</a>
+        </div>
+      </div>
     </section>
-    <aside class="panel">
-      <h2>The little details</h2>
-      <strong>Sample package includes</strong>
-      <ul class="inclusions">
-        <li>6 nights of accommodation</li>
-        <li>Daily breakfast</li>
-        <li>Listed sightseeing activities</li>
-        <li>Transfers within the itinerary</li>
-      </ul>
-      <strong>Not included</strong>
-      <ul class="inclusions">
-        <li>Travel to and from the starting city</li>
-        <li>Personal expenses and optional activities</li>
-        <li>Lunch and dinner</li>
-      </ul>
-      <p class="note">This is a planning example. Hotel availability, operators and inclusions have not been verified for purchase.</p>
-    </aside>
-  </div>
 
-  <p class="note scope-note">All prices, ratings and itinerary details on this page are sample data for a college frontend project. No live availability, payments or real reservations are involved.</p>
-</main>
+    <!-- Detail Bottom -->
+    <div class="detail-layout">
+      <div>
+        
+        <!-- Day by Day Itinerary -->
+        <article class="panel">
+          <h2>Your Journey, Day by Day</h2>
+          <div class="timeline">
+            
+            <div class="timeline-item">
+              <div class="timeline-badge">1</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 1: Arrive in Cochin &amp; Scenic Drive to Munnar</span>
+                  <span class="timeline-tag">Arrival</span>
+                </div>
+                <p class="timeline-desc">Meet your driver at Cochin airport and drive through rubber plantations and Cheeyappara waterfalls up to Munnar hill station.</p>
+              </div>
+            </div>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+            <div class="timeline-item">
+              <div class="timeline-badge">2</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 2: Tea Estates &amp; Eravikulam Wildlife</span>
+                  <span class="timeline-tag">Nature</span>
+                </div>
+                <p class="timeline-desc">Visit the Tata Tea Museum for tea tasting, explore rolling green hills, and spot the endangered Nilgiri Tahr at Eravikulam National Park.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">3</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 3: Mattupetty Dam &amp; Spice Gardens</span>
+                  <span class="timeline-tag">Exploration</span>
+                </div>
+                <p class="timeline-desc">Take a calm boat ride across Mattupetty Dam, try your voice at Echo Point, and stroll through aromatic cardamom and clove spice plantations.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">4</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 4: Descent to Alleppey &amp; Lakeside Sunset</span>
+                  <span class="timeline-tag">Transit</span>
+                </div>
+                <p class="timeline-desc">Descend from the Western Ghats to the coastal plains of Alleppey. Check into your waterside heritage resort and enjoy an evening Ayurvedic foot massage.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">5</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 5: Overnight Deluxe Houseboat Cruise</span>
+                  <span class="timeline-tag">Houseboat</span>
+                </div>
+                <p class="timeline-desc">Board your private houseboat. Glide through Vembanad Lake while the on-board chef prepares fresh Karimeen fish and traditional Kerala vegetarian delicacies.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">6</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 6: Village Canoeing &amp; Coir Weaving Trail</span>
+                  <span class="timeline-tag">Culture</span>
+                </div>
+                <p class="timeline-desc">Wake to sunrise over the backwaters. Take a small country canoe through narrow village canals and observe local duck farming and coir making.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-badge">7</div>
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <span class="timeline-day">Day 7: Fort Kochi Walk &amp; Departure</span>
+                  <span class="timeline-tag">Departure</span>
+                </div>
+                <p class="timeline-desc">Stop by Fort Kochi to see the historic Chinese fishing nets and Jewish Synagogue before your final transfer to Cochin International Airport.</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Inclusions & Sidebar Panel -->
+      <aside>
+        <div class="panel">
+          <h3>The Little Details</h3>
+          <h4 style="color: var(--success); margin-top: 14px; margin-bottom: 8px;">Package Inclusions</h4>
+          <ul class="inclusions-list">
+            <li>6 nights stay (3 nights Munnar resort + 2 nights Alleppey resort + 1 night deluxe houseboat)</li>
+            <li>Daily buffet breakfast, plus all meals on houseboat</li>
+            <li>Eravikulam National Park and Tea Museum entry fees</li>
+            <li>Dedicated AC cab with chauffeur for the entire 7 days</li>
+          </ul>
+
+          <h4 style="color: var(--error); margin-top: 20px; margin-bottom: 8px;">Not Included</h4>
+          <ul class="exclusions-list">
+            <li>Airfare or rail transit to Cochin</li>
+            <li>Personal wellness treatments or Ayurvedic spa packages</li>
+            <li>Lunches and dinners in Munnar</li>
+          </ul>
+
+          <hr style="border: 0; border-top: 1px dashed var(--line); margin: 20px 0;">
+          <a class="btn btn-lime btn-block btn-lg" href="booking.html?package=kerala-slow-days">Book This Package ↗</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Scope Note -->
+    <p class="scope-note">
+      <strong>Academic Project Scope:</strong> All prices, ratings, and itinerary details on this page are sample data for GLA University frontend mini-project evaluation.
+    </p>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Sample Itineraries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Planning &amp; Booking</h4>
+          <ul class="footer-links">
+            <li><a href="booking.html">Book a Tour</a></li>
+            <li><a href="payment.html">Payment Demo</a></li>
+            <li><a href="booking-confirmation.html">Booking Confirmation</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Academic Project</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Project &amp; Team</a></li>
+            <li><a href="contact.html">Contact &amp; Enquiries</a></li>
+            <li><span class="text-muted">Supervisor: Satyaprakash Singh</span></li>
+            <li><span class="text-muted">Group 9 · B.Tech CSE 3rd Year</span></li>
+            <li><span class="text-muted">GLA University, Mathura</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India · Developed for Academic Evaluation at GLA University, Mathura. Frontend Prototype (HTML5 + CSS3).</p>
+        <p>All prices (INR), itineraries, and reviews are illustrative demo content. No real financial transactions are executed.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

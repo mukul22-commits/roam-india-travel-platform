@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View past and upcoming travel reservations with Roam India — traveler booking dashboard.">
+  <title>Booking History | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Booking History</span>
+      </div>
+      <div class="page-header-inner">
+        <div>
+          <span class="eyebrow">Traveler Account Dashboard</span>
+          <h1>My Bookings &amp; Trip History</h1>
+          <p>Review active travel bookings, past holiday vouchers, and confirmed reservations.</p>
+        </div>
+        <div>
+          <a class="btn btn-primary" href="booking.html">Book New Tour ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Stats Counters -->
+    <section class="grid grid-3" style="margin-bottom: 32px;" aria-label="Account statistics">
+      <div class="panel" style="padding: 20px; display: flex; align-items: center; gap: 16px;">
+        <div style="width: 50px; height: 50px; border-radius: var(--radius-full); background: var(--accent); display: grid; place-items: center; font-size: 1.5rem; font-weight: 700; color: var(--ink-dark);">
+          3
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--muted); font-weight: 700;">Total Trips Recorded</div>
+          <strong style="font-size: 1.2rem; color: var(--ink-dark);">3 Reservations</strong>
+        </div>
+      </div>
+
+      <div class="panel" style="padding: 20px; display: flex; align-items: center; gap: 16px;">
+        <div style="width: 50px; height: 50px; border-radius: var(--radius-full); background: #e0f2fe; display: grid; place-items: center; font-size: 1.5rem; font-weight: 700; color: #0284c7;">
+          1
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--muted); font-weight: 700;">Upcoming Journey</div>
+          <strong style="font-size: 1.2rem; color: var(--ink-dark);">1 Confirmed Trip</strong>
+        </div>
+      </div>
+
+      <div class="panel" style="padding: 20px; display: flex; align-items: center; gap: 16px;">
+        <div style="width: 50px; height: 50px; border-radius: var(--radius-full); background: #edf7ed; display: grid; place-items: center; font-size: 1.5rem; font-weight: 700; color: #2e7d32;">
+          2
+        </div>
+        <div>
+          <div style="font-size: 0.8rem; text-transform: uppercase; color: var(--muted); font-weight: 700;">Completed Escapes</div>
+          <strong style="font-size: 1.2rem; color: var(--ink-dark);">2 Past Voyages</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bookings List Section -->
+    <section aria-labelledby="history-list-heading" style="margin-bottom: 60px;">
+      <h2 id="history-list-heading" style="font-size: 1.4rem; margin-bottom: 20px;">Reservation Records</h2>
+
+      <!-- Booking Record 1: Upcoming -->
+      <article class="history-card">
+        <img class="history-img" src="assets/mountains.png" alt="Snow mountain landscape" loading="lazy">
+        <div class="history-info">
+          <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 6px;">
+            <span class="status-pill status-confirmed">Upcoming Trip</span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--primary);">#RI-2026-89421</span>
+          </div>
+          <h3>The Himalayan Escape</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">📍 Manali &amp; Solang Valley, Himachal Pradesh · 6 Days / 5 Nights</p>
+          <div class="history-meta">
+            <span>📅 <strong>Travel Date:</strong> 15 Nov 2026</span>
+            <span>👥 <strong>Travelers:</strong> 2 Adults (Twin Sharing)</span>
+            <span>💳 <strong>Paid:</strong> ₹38,300</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a class="btn btn-primary btn-sm" href="booking-confirmation.html">View Voucher ↗</a>
+          <a class="btn btn-light btn-sm" href="destination-himalayan-escape.html">Trip Details</a>
+        </div>
+      </article>
+
+      <!-- Booking Record 2: Completed -->
+      <article class="history-card">
+        <img class="history-img" src="assets/palace.png" alt="Jaipur historical palace" loading="lazy">
+        <div class="history-info">
+          <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 6px;">
+            <span class="status-pill status-completed">Completed</span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--muted);">#RI-2025-44109</span>
+          </div>
+          <h3>A Royal Rajasthan Trail</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">📍 Jaipur &amp; Udaipur, Rajasthan · 5 Days / 4 Nights</p>
+          <div class="history-meta">
+            <span>📅 <strong>Traveled:</strong> 10 Dec 2025</span>
+            <span>👥 <strong>Travelers:</strong> 2 Adults (Haveli Stay)</span>
+            <span>💳 <strong>Paid:</strong> ₹32,800</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a class="btn btn-secondary btn-sm" href="destination-royal-rajasthan.html">Review Package</a>
+          <a class="btn btn-light btn-sm" href="booking.html?package=royal-rajasthan">Rebook Trip</a>
+        </div>
+      </article>
+
+      <!-- Booking Record 3: Completed -->
+      <article class="history-card">
+        <img class="history-img" src="assets/backwaters.png" alt="Alleppey traditional houseboat" loading="lazy">
+        <div class="history-info">
+          <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 6px;">
+            <span class="status-pill status-completed">Completed</span>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--muted);">#RI-2025-21980</span>
+          </div>
+          <h3>Backwater Hideaway</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">📍 Alleppey, Kerala · 4 Days / 3 Nights</p>
+          <div class="history-meta">
+            <span>📅 <strong>Traveled:</strong> 18 Aug 2025</span>
+            <span>👥 <strong>Travelers:</strong> 1 Adult (Solo Retreat)</span>
+            <span>💳 <strong>Paid:</strong> ₹12,900</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <a class="btn btn-secondary btn-sm" href="destination-alleppey-retreat.html">Review Package</a>
+          <a class="btn btn-light btn-sm" href="booking.html?package=alleppey-retreat">Rebook Trip</a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,169 +1,221 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Browse all sample India travel packages with Roam India.">
-<title>Travel packages | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse 32 curated tour packages across India and international destinations — Himalayas, Rajasthan, Kerala, Bali, Japan and more.">
+  <title>Tour Packages Across India &amp; Beyond | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Discover</a>
-      <a href="packages.html" class="active" aria-current="page">All escapes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <section class="intro">
-    <div>
-      <span class="eyebrow">Every escape, in one place</span>
-      <h1>Find a trip that feels like you.</h1>
-      <p>Six sample packages across the mountains, the coast and the cities.</p>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html" class="active" aria-current="page">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <div class="toolbar">
-    <div class="chips" aria-label="Jump to category">
-      <a class="chip" href="#adventure">Adventure</a>
-      <a class="chip" href="#nature">Nature</a>
-      <a class="chip" href="#culture">Culture</a>
-      <a class="chip" href="#relaxation">Relaxation</a>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+
+    <section class="page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Tour Packages</span>
+      </div>
+      <div class="page-header-inner">
+        <div>
+          <span class="eyebrow">Ready-to-book itineraries</span>
+          <h1>Curated Journeys Across India &amp; Beyond</h1>
+          <p>Twenty India itineraries and twelve international escapes, each with clear inclusions, realistic pacing and INR pricing.</p>
+        </div>
+        <div>
+          <a class="btn btn-outline" href="compare.html">Compare Packages ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter-panel" aria-labelledby="package-filter-heading">
+      <div class="filter-panel-head">
+        <div>
+          <span class="eyebrow">Find the right fit</span>
+          <h2 id="package-filter-heading">Filter tour packages</h2>
+        </div>
+        <p class="results-count" id="packages-count" aria-live="polite">Loading packages…</p>
+      </div>
+
+      <form id="package-filters" class="filter-grid" role="search">
+        <div class="form-group filter-search">
+          <label class="form-label" for="package-search">Search packages</label>
+          <input class="form-control" type="search" id="package-search" name="q" placeholder="Try Kerala, safari, island or heritage">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="package-country">Country</label>
+          <select class="form-control" id="package-country" name="country">
+            <option value="All">All packages</option>
+            <option value="India">India</option>
+            <option value="International">International</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="package-type">Travel style</label>
+          <select class="form-control" id="package-type" name="type">
+            <option value="All">All styles</option>
+            <option value="Mountains">Mountains &amp; hills</option>
+            <option value="Beaches">Beaches</option>
+            <option value="Heritage">Heritage</option>
+            <option value="Nature">Nature</option>
+            <option value="Wildlife">Wildlife</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Spiritual">Spiritual</option>
+            <option value="Relaxation">Relaxation</option>
+            <option value="Romantic">Romantic</option>
+            <option value="City">City</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="package-duration">Trip length</label>
+          <select class="form-control" id="package-duration" name="duration">
+            <option value="All">Any length</option>
+            <option value="short">Short break (up to 3 nights)</option>
+            <option value="medium">Classic (4–6 nights)</option>
+            <option value="long">Extended (7+ nights)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="package-sort">Sort by</label>
+          <select class="form-control" id="package-sort" name="sort">
+            <option value="recommended">Recommended</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="rating">Traveler rating</option>
+          </select>
+        </div>
+
+        <div class="filter-actions">
+          <button class="btn btn-primary" type="submit">Apply filters</button>
+          <button class="btn btn-light" type="button" id="package-reset">Reset</button>
+        </div>
+      </form>
+
+      <div class="active-filter" id="active-package-filter" hidden></div>
+    </section>
+
+    <section aria-labelledby="package-grid-heading" style="margin-bottom: 60px;">
+      <div class="section-header">
+        <span class="eyebrow">The collection</span>
+        <h2 id="package-grid-heading">All tour packages</h2>
+        <p>Every package includes handpicked stays, the listed meals and transport, plus a dedicated planning contact.</p>
+      </div>
+      <div class="grid" id="packages-grid"></div>
+    </section>
+
+    <section class="coverage-panel" aria-labelledby="package-promise-heading">
+      <div>
+        <span class="eyebrow eyebrow-accent">How we plan</span>
+        <h2 id="package-promise-heading">Clear inclusions. Real pacing. No surprise add-ons.</h2>
+        <p>Each itinerary is costed in INR and written around an achievable daily pace. We confirm stays and transfers before your departure date, and keep one advisor with you from enquiry to return.</p>
+        <div class="coverage-actions">
+          <a class="btn btn-lime" href="booking.html">Start a Booking ↗</a>
+          <a class="btn btn-light" href="contact.html">Ask a Travel Advisor</a>
+        </div>
+      </div>
+      <div class="coverage-stats">
+        <div><strong>20</strong><span>India packages</span></div>
+        <div><strong>12</strong><span>International packages</span></div>
+        <div><strong>INR</strong><span>Transparent pricing</span></div>
+        <div><strong>1:1</strong><span>Trip planning support</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
     </div>
-  </div>
-  <p class="results-meta">6 escapes to explore</p>
+  </footer>
 
-  <section aria-labelledby="adventure" style="margin-bottom:40px">
-    <h2 id="adventure">Adventure</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-himalayan-escape.html" aria-label="Explore The Himalayan Escape"><img src="assets/mountains.png" alt="Illustrative mountain landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Adventure</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Manali &amp; Solang Valley · India</div>
-          <h3><a href="destination-himalayan-escape.html">The Himalayan Escape</a></h3>
-          <div class="card-meta"><span>6 days / 5 nights</span><span>★ 4.9 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹18,900</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-himalayan-escape.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section aria-labelledby="nature" style="margin-bottom:40px">
-    <h2 id="nature">Nature</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-kerala-slow-days.html" aria-label="Explore Kerala, at Your Own Pace"><img src="assets/backwaters.png" alt="Illustrative backwaters landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Nature</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Alleppey &amp; Munnar · India</div>
-          <h3><a href="destination-kerala-slow-days.html">Kerala, at Your Own Pace</a></h3>
-          <div class="card-meta"><span>7 days / 6 nights</span><span>★ 4.9 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹22,500</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-kerala-slow-days.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-manali-weekender.html" aria-label="Explore A Little Mountain Reset"><img src="assets/mountains.png" alt="Illustrative mountain landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Nature</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Manali · India</div>
-          <h3><a href="destination-manali-weekender.html">A Little Mountain Reset</a></h3>
-          <div class="card-meta"><span>3 days / 2 nights</span><span>★ 4.6 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹8,900</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-manali-weekender.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section aria-labelledby="culture" style="margin-bottom:40px">
-    <h2 id="culture">Culture</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-royal-rajasthan.html" aria-label="Explore A Royal Rajasthan Trail"><img src="assets/palace.png" alt="Illustrative palace landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Culture</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Jaipur &amp; Udaipur · India</div>
-          <h3><a href="destination-royal-rajasthan.html">A Royal Rajasthan Trail</a></h3>
-          <div class="card-meta"><span>5 days / 4 nights</span><span>★ 4.8 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹16,400</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-royal-rajasthan.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-jaipur-weekend.html" aria-label="Explore The Pink City Weekend"><img src="assets/palace.png" alt="Illustrative palace landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Culture</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Jaipur · India</div>
-          <h3><a href="destination-jaipur-weekend.html">The Pink City Weekend</a></h3>
-          <div class="card-meta"><span>3 days / 2 nights</span><span>★ 4.7 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹7,900</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-jaipur-weekend.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section aria-labelledby="relaxation" style="margin-bottom:40px">
-    <h2 id="relaxation">Relaxation</h2>
-    <div class="grid">
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-alleppey-retreat.html" aria-label="Explore Backwater Hideaway"><img src="assets/backwaters.png" alt="Illustrative backwaters landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Relaxation</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Alleppey · India</div>
-          <h3><a href="destination-alleppey-retreat.html">Backwater Hideaway</a></h3>
-          <div class="card-meta"><span>4 days / 3 nights</span><span>★ 4.8 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹12,900</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-alleppey-retreat.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <p class="note scope-note">This static page lists every sample package grouped by category. Live search, filtering and sorting have been removed along with all JavaScript; use the category links above to jump to a section.</p>
-</main>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/destinations.js"></script>
+  <script src="assets/js/packages.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

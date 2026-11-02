@@ -1,114 +1,429 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Explore sample India travel packages with Roam India — a static, illustrative frontend project.">
-<title>Explore | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roam India — Explore curated travel packages, compare destinations, and plan unforgettable journeys across India.">
+  <title>Roam India — Explore India. Create Memories.</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html" class="active" aria-current="page">Discover</a>
-      <a href="packages.html">All escapes</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <section class="intro">
-    <div>
-      <span class="eyebrow">A little further from ordinary</span>
-      <h1>Where will you wander next?</h1>
-      <p>Find your kind of escape. Make room for a new story.</p>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
+      </div>
     </div>
-    <aside>Mountains, colourful cities,<br>and days that move a little slower.</aside>
-  </section>
+  </header>
 
-  <section class="feature">
-    <img src="assets/mountains.png" alt="Illustrative mountain valley landscape">
-    <div class="feature-text">
-      <span class="eyebrow">The mountain collection</span>
-      <h2>Big views.<br>A fresh perspective.</h2>
-      <p>Six days of mountain air and a change of pace.</p>
-      <a class="btn lime" href="destination-himalayan-escape.html">Discover the Himalayan Escape ↗</a>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Hero Section -->
+    <section class="hero-home" aria-label="Welcome banner">
+      <div class="hero-home-content">
+        <span class="eyebrow eyebrow-accent">Discover Incredible India</span>
+        <h1>Explore India.<br>Create Memories.</h1>
+        <p>Discover unforgettable destinations, curated packages, and immersive experiences designed for every kind of traveler. From snow-capped Himalayan peaks to serene backwaters and majestic royal palaces.</p>
+        <div class="hero-actions">
+          <a class="btn btn-lime btn-lg" href="destinations.html">Explore Destinations ↗</a>
+          <a class="btn btn-light btn-lg" href="packages.html">View Packages</a>
+        </div>
+      </div>
+
+      <div class="hero-quickbar">
+        <span>Popular Themes:</span>
+        <div class="hero-quickbar-links">
+          <a href="destinations.html#hills">Hills &amp; Adventure</a>
+          <a href="destinations.html#heritage">Royal Heritage</a>
+          <a href="destinations.html#nature">Backwaters &amp; Nature</a>
+          <a href="compare.html">Compare Tours</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Roam India (Feature Cards) -->
+    <section class="section-block" aria-labelledby="why-roam-india-title">
+      <div class="section-header text-center">
+        <span class="eyebrow">The Roam India Advantage</span>
+        <h2 id="why-roam-india-title">Why Travel With Roam India?</h2>
+        <p>Built with passion to make discovering the beauty of India seamless, transparent, and memorable.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🗺️</div>
+          <h3>Curated Experiences</h3>
+          <p>Hand-crafted itineraries that blend iconic landmarks with tranquil hidden spots and authentic regional culture.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🏷️</div>
+          <h3>Affordable Packages</h3>
+          <p>Transparent pricing in INR with zero hidden surprises. High quality accommodations and transfers at accessible rates.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🛡️</div>
+          <h3>Trusted Planning</h3>
+          <p>Thoughtfully paced schedules, verified local guides, and 24/7 dedicated assistance throughout your voyage.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">✨</div>
+          <h3>Flexible Itineraries</h3>
+          <p>Easily compare tours, review day-by-day routes, and customize excursions according to your travel style.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="section-block" aria-labelledby="featured-destinations-title">
+      <div class="section-header">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:12px;">
+          <div>
+            <span class="eyebrow">Handpicked Escapes</span>
+            <h2 id="featured-destinations-title">Featured Destinations</h2>
+            <p>From misty mountain valleys to royal desert fortresses and peaceful canals.</p>
+          </div>
+          <a class="text-link" href="destinations.html">View all destinations ↗</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Destination Card 1 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/mountains.png" alt="Snow-capped Himalayan mountains in Manali" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-hills">Hills &amp; Adventure</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Manali &amp; Solang Valley, Himachal Pradesh</span>
+            <h3 class="card-title"><a href="destination-himalayan-escape.html">Manali Mountain Wonder</a></h3>
+            <p class="card-description">Crisp alpine air, pine forests, adventure sports in Solang Valley, and scenic mountain drives toward Atal Tunnel.</p>
+            <div class="card-meta">
+              <span>Duration: 6 Days / 5 Nights</span>
+              <span class="card-rating">★ 4.9</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹18,900</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-himalayan-escape.html">View Details</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Destination Card 2 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/palace.png" alt="Historic royal palace courtyard in Rajasthan" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-heritage">Heritage &amp; Culture</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Jaipur &amp; Udaipur, Rajasthan</span>
+            <h3 class="card-title"><a href="destination-royal-rajasthan.html">Royal Rajasthan Heritage</a></h3>
+            <p class="card-description">Walk through sandstone forts, royal palaces, ornate lakeside havelis, and vibrant artisan handicraft bazaars.</p>
+            <div class="card-meta">
+              <span>Duration: 5 Days / 4 Nights</span>
+              <span class="card-rating">★ 4.8</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹16,400</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-royal-rajasthan.html">View Details</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Destination Card 3 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/backwaters.png" alt="Tranquil Kerala backwaters with houseboats" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-nature">Nature &amp; Relaxation</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Alleppey &amp; Munnar, Kerala</span>
+            <h3 class="card-title"><a href="destination-kerala-slow-days.html">Kerala Backwater Serenity</a></h3>
+            <p class="card-description">Glide along palm-fringed lagoons in traditional houseboats, stroll rolling tea estates, and savor spiced coastal cuisine.</p>
+            <div class="card-meta">
+              <span>Duration: 7 Days / 6 Nights</span>
+              <span class="card-rating">★ 4.9</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹22,500</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-kerala-slow-days.html">View Details</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Popular Packages -->
+    <section class="section-block" aria-labelledby="popular-packages-title">
+      <div class="section-header">
+        <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:12px;">
+          <div>
+            <span class="eyebrow">Ready-to-Book Escapes</span>
+            <h2 id="popular-packages-title">Popular Tour Packages</h2>
+            <p>Complete holiday experiences with verified accommodations, daily breakfast, and private transfers.</p>
+          </div>
+          <a class="text-link" href="packages.html">Explore all 6 packages ↗</a>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Package Card 1 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/mountains.png" alt="Manali mountain landscape" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-nature">Hills</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Manali, Himachal Pradesh</span>
+            <h3 class="card-title"><a href="destination-manali-weekender.html">A Little Mountain Reset</a></h3>
+            <ul class="card-highlights">
+              <li>3-star boutique mountain resort</li>
+              <li>Hadimba Temple &amp; Old Manali cafes</li>
+              <li>Scenic riverside bonfire evening</li>
+            </ul>
+            <div class="card-meta">
+              <span>3 Days / 2 Nights</span>
+              <span class="card-rating">★ 4.6</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹8,900</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-manali-weekender.html">View</a>
+                <a class="btn btn-primary btn-sm" href="booking.html?package=manali-weekender">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package Card 2 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/palace.png" alt="Jaipur architectural monument" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-culture">Culture</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Jaipur, Rajasthan</span>
+            <h3 class="card-title"><a href="destination-jaipur-weekend.html">The Pink City Weekend</a></h3>
+            <ul class="card-highlights">
+              <li>Heritage haveli accommodation</li>
+              <li>Amber Fort &amp; Hawa Mahal guided entry</li>
+              <li>Johari Bazaar shopping walk</li>
+            </ul>
+            <div class="card-meta">
+              <span>3 Days / 2 Nights</span>
+              <span class="card-rating">★ 4.7</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹7,900</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-jaipur-weekend.html">View</a>
+                <a class="btn btn-primary btn-sm" href="booking.html?package=jaipur-weekend">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Package Card 3 -->
+        <article class="card">
+          <div class="card-image">
+            <img src="assets/backwaters.png" alt="Alleppey peaceful backwaters" loading="lazy" width="600" height="400">
+            <span class="card-badge badge badge-relaxation">Relaxation</span>
+          </div>
+          <div class="card-body">
+            <span class="card-location">📍 Alleppey, Kerala</span>
+            <h3 class="card-title"><a href="destination-alleppey-retreat.html">Backwater Hideaway</a></h3>
+            <ul class="card-highlights">
+              <li>Premium deluxe houseboat stay</li>
+              <li>Fresh authentic Kerala meals on board</li>
+              <li>Sunset canoe ride through village canals</li>
+            </ul>
+            <div class="card-meta">
+              <span>4 Days / 3 Nights</span>
+              <span class="card-rating">★ 4.8</span>
+            </div>
+            <div class="price-row">
+              <div class="price-block">
+                <strong>₹12,900</strong>
+                <small>per person · twin sharing</small>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-secondary btn-sm" href="destination-alleppey-retreat.html">View</a>
+                <a class="btn btn-primary btn-sm" href="booking.html?package=alleppey-retreat">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-block" aria-labelledby="testimonials-title">
+      <div class="section-header text-center">
+        <span class="eyebrow">Traveler Reviews</span>
+        <h2 id="testimonials-title">Loved by Curious Explorers</h2>
+        <p>Real traveler stories and feedback from our nationwide travel community.</p>
+      </div>
+
+      <div class="grid">
+        <article class="testimonial-card">
+          <div class="testimonial-rating" aria-label="5 stars rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            "The Himalayan Escape itinerary was planned with remarkable care. We loved the quiet cedar forest walk in Old Manali and the private vehicle made getting to Solang Valley totally stress-free."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">PS</div>
+            <div class="author-details">
+              <strong>Priya Sharma</strong>
+              <small>New Delhi · Traveled Oct 2026</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-rating" aria-label="5 stars rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            "Cruising the Alleppey backwaters on a traditional houseboat was the reset our family needed. The local food, gentle waters, and sunset canoe ride were memories for a lifetime."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">RD</div>
+            <div class="author-details">
+              <strong>Rohan Deshmukh</strong>
+              <small>Mumbai · Traveled Sep 2026</small>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <div class="testimonial-rating" aria-label="5 stars rating">★★★★★</div>
+          <blockquote class="testimonial-quote">
+            "The comparison tool allowed us to see exactly what Jaipur and Udaipur included before making our reservation. Clear INR pricing with no confusing tiers!"
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">AV</div>
+            <div class="author-details">
+              <strong>Aarav Verma</strong>
+              <small>Agra, UP · Traveled Aug 2026</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="cta-banner" aria-label="Call to action">
+      <h2>Ready for Your Next Adventure?</h2>
+      <p>Start planning your journey with Roam India today. Compare packages, customize itineraries, and explore the diverse landscapes of our incredible country.</p>
+      <div class="cta-banner-actions">
+        <a class="btn btn-lime btn-lg" href="booking.html">Plan Your Trip ↗</a>
+        <a class="btn btn-light btn-lg" href="packages.html">Explore All Packages</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
     </div>
-    <div class="feature-note">Manali &amp; Solang Valley · 6 days</div>
-  </section>
+  </footer>
 
-  <section aria-labelledby="packages-title">
-    <h2 id="packages-title">Good places. Great possibilities.</h2>
-    <div class="results-meta">A few of our sample escapes</div>
-    <div class="grid">
-
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-himalayan-escape.html" aria-label="Explore The Himalayan Escape"><img src="assets/mountains.png" alt="Illustrative mountain landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Adventure</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Manali &amp; Solang Valley · India</div>
-          <h3><a href="destination-himalayan-escape.html">The Himalayan Escape</a></h3>
-          <div class="card-meta"><span>6 days / 5 nights</span><span>★ 4.9 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹18,900</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-himalayan-escape.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-royal-rajasthan.html" aria-label="Explore A Royal Rajasthan Trail"><img src="assets/palace.png" alt="Illustrative palace landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Culture</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Jaipur &amp; Udaipur · India</div>
-          <h3><a href="destination-royal-rajasthan.html">A Royal Rajasthan Trail</a></h3>
-          <div class="card-meta"><span>5 days / 4 nights</span><span>★ 4.8 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹16,400</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-royal-rajasthan.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-image">
-          <a href="destination-kerala-slow-days.html" aria-label="Explore Kerala, at Your Own Pace"><img src="assets/backwaters.png" alt="Illustrative backwaters landscape" loading="lazy" width="600" height="400"></a>
-          <span class="badge">Nature</span>
-        </div>
-        <div class="card-body">
-          <div class="location">Alleppey &amp; Munnar · India</div>
-          <h3><a href="destination-kerala-slow-days.html">Kerala, at Your Own Pace</a></h3>
-          <div class="card-meta"><span>7 days / 6 nights</span><span>★ 4.9 <span class="note">sample rating</span></span></div>
-          <div class="price-row">
-            <div class="price"><strong>₹22,500</strong><small>per person · sample price</small></div>
-            <a class="text-link" href="destination-kerala-slow-days.html">Explore trip ↗</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-    <p class="note" style="margin-top:20px"><a class="text-link" href="packages.html">See all six escapes ↗</a></p>
-  </section>
-
-  <p class="note scope-note">This is a sample travel catalog for a college frontend project. Prices, ratings and itineraries are illustrative; no live reservations or payments are made, and there is no booking backend. Travel artwork is illustrative.</p>
-</main>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

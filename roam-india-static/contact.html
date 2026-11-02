@@ -1,92 +1,210 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Enquire about a Roam India sample travel package.">
-<title>Contact | Roam India</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Get in touch with Roam India — customer support, tour enquiries, and custom holiday planning across India.">
+  <title>Contact Us | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-<header>
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html" aria-label="Roam India home"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html">Discover</a>
-      <a href="packages.html">All escapes</a>
-      <a href="contact.html" class="active" aria-current="page">Contact</a>
-    </nav>
-    <span class="project-tag">A world of possibilities</span>
-  </div>
-</header>
+  <a class="skip" href="#main">Skip to main content</a>
 
-<main id="main" class="wrap">
-  <section class="intro">
-    <div>
-      <span class="eyebrow">Make it your own</span>
-      <h1>Let's put a plan together.</h1>
-      <p>This project has no booking backend, so an enquiry is the next step for any package below.</p>
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <div class="panel" style="margin-bottom:30px">
-    <p class="note">Since this is a static HTML/CSS project with no server, dates, traveller counts and totals can't be calculated or saved automatically. Pick a trip and send an enquiry email instead — replace <strong>hello@roamindia.example</strong> with a real address if you deploy this project further.</p>
-  </div>
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Contact Us</span>
+      </div>
+      <div class="page-header-inner">
+        <div>
+          <span class="eyebrow">We'd Love to Hear From You</span>
+          <h1>Get in Touch</h1>
+          <p>Have questions about a travel circuit, want to customize an itinerary, or need assistance planning your holiday? Reach out to our team below.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h2>Choose a trip to enquire about</h2>
-    <div class="grid">
+    <!-- Contact Layout Grid -->
+    <div class="detail-layout" style="margin-bottom: 50px;">
+      
+      <!-- Contact Form -->
+      <section aria-labelledby="contact-form-heading">
+        <div class="form-card">
+          <h2 id="contact-form-heading" style="font-size: 1.45rem; margin-bottom: 20px;">Send Us an Enquiry</h2>
 
-      <article class="panel">
-        <h3>The Himalayan Escape</h3>
-        <p class="note">Manali &amp; Solang Valley · 6 days · ₹18,900 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20The%20Himalayan%20Escape">Email an enquiry</a>
-      </article>
+          <form action="mailto:support@roamindia.example" method="GET">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Full Name <span class="req">*</span></label>
+                <input class="form-control" type="text" id="contact-name" name="name" placeholder="e.g. Aarav Sharma" required>
+              </div>
 
-      <article class="panel">
-        <h3>A Royal Rajasthan Trail</h3>
-        <p class="note">Jaipur &amp; Udaipur · 5 days · ₹16,400 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20A%20Royal%20Rajasthan%20Trail">Email an enquiry</a>
-      </article>
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email Address <span class="req">*</span></label>
+                <input class="form-control" type="email" id="contact-email" name="email" placeholder="e.g. aarav@example.com" required>
+              </div>
+            </div>
 
-      <article class="panel">
-        <h3>Kerala, at Your Own Pace</h3>
-        <p class="note">Alleppey &amp; Munnar · 7 days · ₹22,500 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20Kerala%2C%20at%20Your%20Own%20Pace">Email an enquiry</a>
-      </article>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Phone / WhatsApp Number</label>
+                <input class="form-control" type="tel" id="contact-phone" name="phone" placeholder="e.g. +91 98765 43210">
+              </div>
 
-      <article class="panel">
-        <h3>A Little Mountain Reset</h3>
-        <p class="note">Manali · 3 days · ₹8,900 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20A%20Little%20Mountain%20Reset">Email an enquiry</a>
-      </article>
+              <div class="form-group">
+                <label class="form-label" for="contact-package">Trip / Topic of Interest</label>
+                <select class="form-control" id="contact-package" name="subject">
+                  <option value="General Enquiry">General Tour Enquiry</option>
+                  <option value="The Himalayan Escape">The Himalayan Escape (Manali)</option>
+                  <option value="A Royal Rajasthan Trail">A Royal Rajasthan Trail (Jaipur/Udaipur)</option>
+                  <option value="Kerala, at Your Own Pace">Kerala, at Your Own Pace</option>
+                  <option value="Custom Itinerary Request">Custom Itinerary Planning</option>
+                  <option value="Group Tour Booking">Group / Family Tour Booking</option>
+                </select>
+              </div>
+            </div>
 
-      <article class="panel">
-        <h3>The Pink City Weekend</h3>
-        <p class="note">Jaipur · 3 days · ₹7,900 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20The%20Pink%20City%20Weekend">Email an enquiry</a>
-      </article>
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Your Message or Enquiry Details <span class="req">*</span></label>
+              <textarea class="form-control" id="contact-message" name="body" rows="4" placeholder="Tell us about your desired travel dates, party size, questions about hotel stays, or custom itinerary requests..." required></textarea>
+            </div>
 
-      <article class="panel">
-        <h3>Backwater Hideaway</h3>
-        <p class="note">Alleppey · 4 days · ₹12,900 / person</p>
-        <a class="btn" href="mailto:hello@roamindia.example?subject=Enquiry%3A%20Backwater%20Hideaway">Email an enquiry</a>
-      </article>
+            <div style="margin-top: 24px;">
+              <button class="btn btn-primary btn-lg" type="submit">
+                Submit Enquiry ↗
+              </button>
+            </div>
 
+          </form>
+        </div>
+      </section>
+
+      <!-- Direct Contact Details & Info Sidebar -->
+      <aside aria-label="Contact information">
+        
+        <div class="panel">
+          <h3>Customer Support</h3>
+          <p style="font-size: 0.92rem; color: var(--muted); line-height: 1.7; margin-bottom: 20px;">
+            📍 <strong>Roam India Travel Services</strong><br>
+            Connaught Place, Central Delhi<br>
+            New Delhi, Delhi — 110001, India
+          </p>
+
+          <h4 style="margin-bottom: 8px;">Direct Communication</h4>
+          <ul style="list-style: none; padding: 0; margin: 0 0 20px; font-size: 0.9rem; line-height: 2; color: var(--muted);">
+            <li>✉️ <strong>Email:</strong> <a href="mailto:support@roamindia.example" style="color: var(--primary);">support@roamindia.example</a></li>
+            <li>📞 <strong>Helpline:</strong> +91 1800 123 7626</li>
+            <li>⏰ <strong>Support Hours:</strong> Mon – Sat, 9:00 AM – 6:00 PM IST</li>
+          </ul>
+
+          <h4 style="margin-bottom: 8px;">Platform Assistance</h4>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <span class="project-tag">Verified Tour Partner</span>
+            <span class="project-tag">Pan-India Support</span>
+          </div>
+        </div>
+
+        <!-- FAQ CTA -->
+        <div class="panel" style="background: var(--surface-alt); text-align: center;">
+          <h4>Have a Quick Question?</h4>
+          <p style="font-size: 0.88rem; color: var(--muted); margin-bottom: 16px;">Check our Frequently Asked Questions page for immediate answers regarding pricing, bookings, and cancellation policies.</p>
+          <a class="btn btn-secondary btn-block" href="faq.html">Browse FAQs ↗</a>
+        </div>
+
+      </aside>
     </div>
-  </section>
 
-  <p class="note scope-note">No payment is required and no real reservation is made. This page replaces the earlier JavaScript-driven booking simulation, saved itinerary and localStorage-based booking history, none of which can run without JavaScript.</p>
-</main>
+  </main>
 
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <a class="brand" href="index.html"><span class="mark">↗</span><span>roam<small>INDIA</small></span></a>
-    <p>Travel and Tour Management Platform<br>Group 9 · GLA University</p>
-    <p>Static frontend project · No backend<br>HTML &amp; CSS only</p>
-  </div>
-</footer>
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

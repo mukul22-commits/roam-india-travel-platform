@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore India's premier travel destinations — from the Himalayas to Kerala's waterways and Rajasthan's palaces.">
+  <title>Destinations | Roam India</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%231f5145'/%3E%3Cpath d='M26 11L22 23L11 29L16 17Z' fill='%23d7f17d'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <!-- Global Header -->
+  <header>
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Roam India Home">
+        <span class="mark">↗</span>
+        <span>roam<small>INDIA</small></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active" aria-current="page">Destinations</a>
+        <a href="packages.html">Packages</a>
+        <a href="compare.html">Compare</a>
+        <a href="itinerary.html">Itinerary</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn-lime btn-sm">Book Now</a>
+      </nav>
+
+      <div class="header-actions">
+        <span class="project-tag">Explore India · Create Memories</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" class="wrap">
+    
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Destinations</span>
+      </div>
+      <div class="page-header-inner">
+        <div>
+          <span class="eyebrow">Discover India &amp; Beyond</span>
+          <h1>Destinations Across India &amp; Beyond</h1>
+          <p>Search the full catalogue of Indian states, union territories and international escapes, then filter by region, travel style and price.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search & Filter Panel -->
+    <section class="filter-panel" aria-labelledby="filter-heading">
+      <div class="filter-panel-head">
+        <div>
+          <span class="eyebrow">Find your next trip</span>
+          <h2 id="filter-heading">Search the catalogue</h2>
+        </div>
+        <p class="results-count" id="destinations-count" aria-live="polite">Loading destinations…</p>
+      </div>
+
+      <form id="destination-filters" class="filter-grid" role="search">
+        <div class="form-group filter-search">
+          <label class="form-label" for="filter-search">Search destinations</label>
+          <input class="form-control" type="search" id="filter-search" name="q" placeholder="Try Manali, Kerala, beach or temple">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="filter-country">Country</label>
+          <select class="form-control" id="filter-country" name="country">
+            <option value="All">All destinations</option>
+            <option value="India">India</option>
+            <option value="International">International</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="filter-region">Region</label>
+          <select class="form-control" id="filter-region" name="region">
+            <option value="All">All regions</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="filter-type">Travel style</label>
+          <select class="form-control" id="filter-type" name="type">
+            <option value="All">All styles</option>
+            <option value="Mountains">Mountains &amp; hills</option>
+            <option value="Beaches">Beaches</option>
+            <option value="Heritage">Heritage</option>
+            <option value="Nature">Nature</option>
+            <option value="Wildlife">Wildlife</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Spiritual">Spiritual</option>
+            <option value="Relaxation">Relaxation</option>
+            <option value="Romantic">Romantic</option>
+            <option value="City">City</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="filter-sort">Sort by</label>
+          <select class="form-control" id="filter-sort" name="sort">
+            <option value="recommended">Recommended</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="name">Name: A–Z</option>
+          </select>
+        </div>
+
+        <div class="filter-actions">
+          <button class="btn btn-primary" type="submit">Apply filters</button>
+          <button class="btn btn-light" type="button" id="filter-reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Dynamic Destinations Grid -->
+    <section aria-labelledby="catalogue-heading" style="margin-bottom: 60px;">
+      <div class="section-header">
+        <span class="eyebrow">The full collection</span>
+        <h2 id="catalogue-heading">Places to go</h2>
+        <p>Every Indian state and union territory, plus handpicked international escapes.</p>
+      </div>
+      <div class="grid" id="destinations-grid"></div>
+    </section>
+
+    <!-- Coverage Panel -->
+    <section class="coverage-panel" aria-labelledby="coverage-heading">
+      <div>
+        <span class="eyebrow eyebrow-accent">Complete coverage</span>
+        <h2 id="coverage-heading">One catalogue, every corner of India — and a little further.</h2>
+        <p>From the Himalayan passes of Ladakh to the lagoons of Lakshadweep, and from Bali to Bhutan, every destination is described with the same practical detail: ideal stay, best season, starting price and the experiences that make it worth the journey.</p>
+        <div class="coverage-actions">
+          <a class="btn btn-lime" href="packages.html">Browse All Packages ↗</a>
+          <a class="btn btn-light" href="compare.html">Compare Tours</a>
+        </div>
+      </div>
+      <div class="coverage-stats">
+        <div><strong>28</strong><span>Indian states</span></div>
+        <div><strong>8</strong><span>Union territories</span></div>
+        <div><strong>43</strong><span>International escapes</span></div>
+        <div><strong>32</strong><span>Ready-to-book packages</span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Roam India Home">
+            <span class="mark">↗</span>
+            <span>roam<small>INDIA</small></span>
+          </a>
+          <p>A modern travel and tour management platform designed to help travelers discover, compare, and plan unforgettable journeys across India.</p>
+          <span class="project-tag">Explore India · Create Memories</span>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="packages.html">Tour Packages</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Plan Your Journey</h4>
+          <ul class="footer-links">
+            <li><a href="compare.html">Compare Packages</a></li>
+            <li><a href="itinerary.html">Travel Itineraries</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+            <li><a href="booking-history.html">Booking History</a></li>
+            <li><a href="faq.html">Help &amp; FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Travel Assistance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Customer Support</a></li>
+            <li><a href="faq.html">Cancellation Policy</a></li>
+            <li><span class="text-muted">Email: support@roamindia.example</span></li>
+            <li><span class="text-muted">Mon – Sat, 9:00 AM – 6:00 PM IST</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Roam India. All rights reserved.</p>
+        <p>Curated holiday packages and travel experiences across India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/destinations.js"></script>
+  <script src="assets/js/packages.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
