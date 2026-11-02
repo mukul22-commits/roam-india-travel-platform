@@ -1,22 +1,18 @@
 # Roam India — Travel and Tour Management Platform
 
-Group 9, GLA University. A responsive HTML5, CSS3 and vanilla JavaScript frontend with a local sample catalogue, package comparison, configurable travel estimates, saved itineraries and simulated checkout. No application dependencies or build step.
+A responsive HTML5, CSS3 and vanilla JavaScript travel and tour management platform with a local destination/package catalogue, package comparison, configurable travel estimates, saved itineraries and simulated checkout. No framework, Node.js dependency, npm package or build step is required.
 
 ## Run on Windows CMD
 
-Install Node.js 18 or newer, extract this ZIP, open CMD inside `travel-tour-platform`, then run:
+No Node.js installation or npm packages are required. Open CMD inside the project folder and run:
 
 ```bat
-npm start
+python -m http.server 8788
 ```
 
-Open http://localhost:8788. Stop with Ctrl+C. Alternatively double-click `start-project.bat` (Node.js preferred, Python fallback).
+Open http://localhost:8788. Stop with Ctrl+C.
 
-```bat
-python -m http.server 8788 --bind 127.0.0.1 --directory dist
-```
-
-Use HTTP rather than opening HTML directly, because ES modules require a server.
+Use HTTP rather than opening HTML directly, because the project uses JavaScript modules and browser security rules work best through a local server.
 
 ## What is included
 
@@ -53,42 +49,69 @@ All amounts are sample INR allowances. No live fare API is used. Departure city 
 - **Taxes, permits, visas, insurance, tolls, parking and other unquoted costs are excluded.** The displayed group total is the sum of selected sample allowances, not a final payable supplier price. Omitted meal/transport categories are listed explicitly.
 - The recipient shown is a category of provider, not a named supplier or evidence of an actual payout. Real supplier allocation requires backend integration.
 
-## Structure
+## Technology Stack
+
+- **HTML5** — semantic page structure, forms, navigation and accessible content.
+- **CSS3** — responsive layouts, design system, cards, tables, forms, navigation and mobile styling.
+- **Vanilla JavaScript (ES6+)** — DOM manipulation, filtering, comparison, booking flow, validation, pricing calculations and UI interactions.
+- **Browser Local Storage** — saved itineraries, comparison selections and booking history.
+- **Local assets** — PNG artwork and project-owned CSS/JavaScript files; no external UI framework is required.
+- **Python HTTP server** — optional local development server using Python's built-in `http.server`; Python is not part of the application stack.
+- **Git/GitHub** — source-code version control and project hosting.
+
+### Project Structure
 
 ```text
-travel-tour-platform/
-  dist/
-    index.html              Discovery and catalogue
-    packages.html           Filterable catalogue
-    destination.html        Details and sample itinerary (?id=...)
-    compare.html            Compare up to 3 trips
-    booking.html            Options, itemized review, simulation
-    itinerary.html          Saved trips and booking history
-    assets/
-      app.js                Original page flow and saved-state actions
-      planner.js            Catalogue, comparison and checkout UI
-      core.js               Filters, validation and persistence
-      catalog.js            Explicit destination seed records
-      data.js               Original packages and generated variants
-      pricing.js            Sample rates and shared quote calculation
-      style.css             Shared responsive design
-      *.png                 Inherited illustrative artwork
-  scripts/serve.mjs          Local loopback-only static server
-  scripts/check.mjs          Syntax, entrypoint and asset validation
-  tests/core.test.mjs        Existing feature regression tests
-  tests/pricing.test.mjs     Pricing, coverage and persistence tests
-  start-project.bat          Windows launcher
-  UPDATE_REPORT.md          Requirements, changes and limitations
+roam-india-static/
+  index.html
+  destinations.html
+  destination-details.html
+  packages.html
+  package-details.html
+  compare.html
+  itinerary.html
+  booking.html
+  payment.html
+  booking-confirmation.html
+  booking-history.html
+  about.html
+  contact.html
+  faq.html
+  destination-alleppey-retreat.html
+  destination-himalayan-escape.html
+  destination-jaipur-weekend.html
+  destination-kerala-slow-days.html
+  destination-manali-weekender.html
+  destination-royal-rajasthan.html
+  assets/
+    css/
+      style.css
+    js/
+      main.js
+      data.js
+      destinations.js
+      packages.js
+      booking.js
+    images/
+      *.png
+    style.css
+  PART1_REPORT.md
+  README.md
 ```
 
 ## Verify
 
+The project is a static frontend and does not require npm, Node.js or a build process. Verify it by running the local server and testing the main navigation, destination/package selection, comparison, itinerary, booking and payment flows in a browser.
+
 ```bat
-npm test
-npm run check
+python -m http.server 8788
 ```
 
-24 automated logic tests cover filters, persistence, input validation, escaping, unique IDs, destination coverage, quote arithmetic, room/car scaling, invalid transport choices, all starting-price calculations and saved quote integrity. Syntax and local asset/link checks cover six entrypoints.
+Then open:
+
+http://localhost:8788
+
+Check the browser console for JavaScript errors and test the responsive layout at desktop, tablet and mobile widths.
 
 ## Demonstration walkthrough
 
