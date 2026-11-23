@@ -1,134 +1,185 @@
 # Roam India — Travel and Tour Management Platform
 
-A responsive HTML5, CSS3 and vanilla JavaScript travel and tour management platform with a local destination/package catalogue, package comparison, configurable travel estimates, saved itineraries and simulated checkout. No framework, Node.js dependency, npm package or build step is required.
+Roam India is a frontend-based travel and tour management website built using HTML5, CSS3 and Vanilla JavaScript. It helps users explore Indian destinations, browse travel packages, view package details and use the available booking interface.
+
+The project is developed as a college mini-project to demonstrate frontend web development, responsive design, JavaScript interactions and browser-based data storage.
 
 ## Run on Windows CMD
 
-No Node.js installation or npm packages are required. Open CMD inside the project folder and run:
+No Node.js installation, npm packages or build tools are required.
+
+1. Open CMD inside the project folder.
+2. Run:
 
 ```bat
-python -m http.server 8788
+python -m http.server 8000
 ```
 
-Open http://localhost:8788. Stop with Ctrl+C.
+3. Open the following address in your browser:
 
-Use HTTP rather than opening HTML directly, because the project uses JavaScript modules and browser security rules work best through a local server.
+```text
+http://localhost:8000
+```
 
-## What is included
+4. To stop the server, press `Ctrl + C` in CMD.
 
-- 154 curated destination seeds across all 28 Indian states and 8 union territories and seven nearby countries: Nepal, Bhutan, Sri Lanka, Maldives, Bangladesh, Myanmar and Thailand.
-- 1,468 sample package records, including the original six packages. Most records are generated planning variants, not independently researched operator tours.
-- Budget, standard, luxury, family, honeymoon, solo, group and weekend variants; appropriate destination themes and additional nature, relaxation and wellness variants.
-- Country, state/region, keyword, experience, package type, budget and duration filters; price/duration sorting; incremental catalogue display.
-- Side-by-side comparison of up to three packages, a shared traveller count and separate stay/transport/meal choices per trip. Selected options transfer into booking.
-- Train, flight and bus return allowances; self-arranged arrival travel; budget/comfort/premium accommodation; local car, bike or bus; meal plans and optional sightseeing allowance.
-- A visible calculation for every line: quantity × unit price, intended recipient category, group total and approximate per-person amount.
-- Two-stage simulated checkout: review every cost and exclusion, then explicitly confirm the simulation. No real payment data collected.
-- Saved itinerary, ordering/removal, booking history, printable itemized confirmations and local record deletion.
-- Existing bookings without a breakdown remain readable as legacy summaries.
+Use a local HTTP server instead of opening HTML files directly, so JavaScript and browser features work correctly.
 
-## Important project scope
+## Current Project Features
 
-The Word synopsis defines a frontend-only prototype and supersedes the PDF's earlier HTML/CSS-only teaching plan for this delivery. Real authentication, payment processing, supplier availability, tickets, confirmation emails and backend services remain future work.
+The following features are present in the current project:
 
-This is not an exhaustive database of every Indian tourist place. Destination seeds provide nationwide coverage and can be expanded in `catalog.js`. International entries are geography/planning examples, not travel recommendations or evidence of open routes. No entry, permit, safety or visa eligibility check is performed. The official India destination reference is https://www.incredibleindia.gov.in/ (reviewed 16 September 2026). Rates and package content are authored mock data, not sourced supplier quotes.
+- Destination catalogue containing 154 destination records.
+- Package catalogue containing 36 actual package records.
+- Destination and package browsing pages.
+- Destination and package detail pages.
+- Search, filtering and sorting options on catalogue pages.
+- URL-based selection and navigation for destination and package details.
+- Responsive layout for desktop and mobile screens.
+- Navigation menu and interactive frontend elements.
+- Booking form interface for entering traveller and trip details.
+- Browser LocalStorage support for demo booking data and saved records.
+- Booking history and confirmation page interfaces.
+- Reusable JavaScript functions and HTML escaping for safer display of text.
 
-The three inherited pictures are illustrative artwork, not verified photos of each location. Additional variants have flexible sample itineraries. Family/solo/group/honeymoon names are planning themes, not promises of special services, discounts or accessibility. No named hotels are offered, and stay tiers are not verified star ratings.
+**Important:** The 36 package records are the actual records currently identified in `data.js`. The earlier claim of 1,468 packages has not been verified and should not be presented as the current package count.
 
-## Pricing rules
+## Features That Need Further Development
 
-All amounts are sample INR allowances. No live fare API is used. Departure city and date do not change rates. Every traveller has the same demo rate; there are no child/infant fare rules.
+Some features described in the original project plan are not fully implemented or verified in the current version.
 
-- Starting prices use **two travellers**, shared rooms, breakfast, sightseeing allowance, local car for mainland destinations, and one service fee. Arrival/return transport is self-arranged by default and excluded. Island transfers are excluded.
-- Hotel rooms = ceiling(travellers / 2); nights = trip days minus one. The selected room-night allowance is multiplied by rooms and nights.
-- A car holds up to four travellers. Cars = ceiling(travellers / 4), charged per trip day.
-- A bike is charged per rider per trip day. Local bus is charged per traveller per day.
-- Arrival travel is a return allowance per traveller. Overseas and island packages only expose a flight allowance or self-arranged travel; these are not verified itineraries.
-- Meals are per traveller per trip day. Sightseeing is a single per-traveller allowance. The INR 500 platform planning fee is charged once per booking.
-- For international examples, stay/local/meal allowances use a fixed 1.5 multiplier; this is not an exchange-rate model.
-- **Taxes, permits, visas, insurance, tolls, parking and other unquoted costs are excluded.** The displayed group total is the sum of selected sample allowances, not a final payable supplier price. Omitted meal/transport categories are listed explicitly.
-- The recipient shown is a category of provider, not a named supplier or evidence of an actual payout. Real supplier allocation requires backend integration.
+| Feature | Current status |
+|---|---|
+| Destination catalogue | Implemented |
+| Package catalogue | Implemented |
+| Search and filtering | Implemented |
+| Package detail pages | Implemented |
+| Package comparison | Needs dynamic implementation |
+| Traveller-based pricing | Needs complete implementation |
+| Stay and transport options | Needs complete implementation |
+| Meals and sightseeing calculations | Needs implementation or verification |
+| Island and international travel restrictions | Needs implementation |
+| Two-stage checkout | Not fully implemented |
+| Payment processing | Demo frontend only; no real payment gateway |
+| Dynamic booking confirmation | Needs correction and verification |
+| Booking history | Browser-based demo functionality |
+| Itinerary management | Needs further verification |
+
+The comparison page currently does not provide the complete dynamic comparison experience described in the original plan. The booking and confirmation pages also contain hardcoded sample information that must be replaced with actual booking data.
 
 ## Technology Stack
 
-- **HTML5** — semantic page structure, forms, navigation and accessible content.
-- **CSS3** — responsive layouts, design system, cards, tables, forms, navigation and mobile styling.
-- **Vanilla JavaScript (ES6+)** — DOM manipulation, filtering, comparison, booking flow, validation, pricing calculations and UI interactions.
-- **Browser Local Storage** — saved itineraries, comparison selections and booking history.
-- **Local assets** — PNG artwork and project-owned CSS/JavaScript files; no external UI framework is required.
-- **Python HTTP server** — optional local development server using Python's built-in `http.server`; Python is not part of the application stack.
-- **Git/GitHub** — source-code version control and project hosting.
+- **HTML5:** Page structure, forms, navigation and content.
+- **CSS3:** Styling, responsive layouts, cards, buttons and page design.
+- **Vanilla JavaScript (ES6+):** DOM manipulation, search, filtering, validation and frontend interactions.
+- **Browser LocalStorage:** Stores supported demo data in the user's browser.
+- **Python HTTP Server:** Used to run the website locally during development.
+- **Git/GitHub:** Source-code version control and project hosting.
 
-### Project Structure
+No frontend framework or external package manager is required.
+
+## Project Structure
+
+The main project structure is organised as follows:
 
 ```text
 roam-india-static/
-  index.html
-  destinations.html
-  destination-details.html
-  packages.html
-  package-details.html
-  compare.html
-  itinerary.html
-  booking.html
-  payment.html
-  booking-confirmation.html
-  booking-history.html
-  about.html
-  contact.html
-  faq.html
-  destination-alleppey-retreat.html
-  destination-himalayan-escape.html
-  destination-jaipur-weekend.html
-  destination-kerala-slow-days.html
-  destination-manali-weekender.html
-  destination-royal-rajasthan.html
-  assets/
-    css/
-      style.css
-    js/
-      main.js
-      data.js
-      destinations.js
-      packages.js
-      booking.js
-    images/
-      *.png
-    style.css
-  PART1_REPORT.md
-  README.md
+│
+├── index.html
+├── destinations.html
+├── destination-details.html
+├── packages.html
+├── package-details.html
+├── compare.html
+├── itinerary.html
+├── booking.html
+├── payment.html
+├── booking-confirmation.html
+├── booking-history.html
+├── about.html
+├── contact.html
+├── faq.html
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── data.js
+│   │   ├── destinations.js
+│   │   ├── packages.js
+│   │   └── booking.js
+│   │
+│   └── images/
+│       └── *.png
+│
+├── README.md
+└── AUDIT_REPORT.md
 ```
 
-## Verify
+This is the intended main structure. Check the actual project folder for the latest filenames and any additional files.
 
-The project is a static frontend and does not require npm, Node.js or a build process. Verify it by running the local server and testing the main navigation, destination/package selection, comparison, itinerary, booking and payment flows in a browser.
+## Booking and Payment Limitations
 
-```bat
-python -m http.server 8788
-```
+The current project is a frontend prototype, not a production travel booking system.
 
-Then open:
+- Booking information is handled through frontend functionality.
+- LocalStorage is browser-specific and does not provide a central database.
+- No real user authentication is implemented.
+- No live hotel, transport or supplier availability is connected.
+- No real payment gateway is integrated.
+- No actual tickets, hotel vouchers or confirmation emails are generated.
+- Hardcoded sample booking details must not be treated as real reservations.
+- Payment screens, if used, must clearly identify themselves as demonstrations.
 
-http://localhost:8788
+No real card details, CVV, banking passwords or OTPs should be collected or stored.
 
-Check the browser console for JavaScript errors and test the responsive layout at desktop, tablet and mobile widths.
+## Pricing Limitations
 
-## Demonstration walkthrough
+The current booking interface should not be described as having a complete dynamic pricing engine until the calculation rules have been implemented and tested.
 
-1. Open All escapes. Select India, Goa and Budget; expect three templates.
-2. Add two different packages to comparison. Try adding four and confirm the three-trip limit.
-3. Open Compare. Set three travellers; adjust stay, return travel and meals in either column.
-4. Choose Review this trip. Verify comparison choices survived navigation.
-5. Change local transport between car, bike and bus; verify the line descriptions, quantities and total update.
-6. Enter example traveller details, departure city and a future date; accept the simulation acknowledgement.
-7. Review the simulated payment. Return to edit selections, then review again and confirm.
-8. Open My trips and reload. View and print the saved itemized summary; delete it when done.
-9. Test an island trip: car, bike, train and bus travel options must not be offered.
-10. Test on a narrow screen and using Tab/Enter. No real personal information is needed.
+The intended future pricing system may include:
 
-## Storage and privacy
+- Accommodation based on room count and trip nights.
+- Local transport based on the selected vehicle and traveller count.
+- Meals based on traveller count and trip duration.
+- Sightseeing allowances.
+- Return travel allowances.
+- A one-time planning fee.
+- Separate exclusions for taxes, permits, visas, insurance, tolls and parking.
 
-Data remains in the current browser. Browser clearing removes it. If storage is blocked, warnings report that changes last only for the visit. The legacy `roam-india-v1` key remains; comparison uses `roam-compare`. No migration deletes old records. Names, emails and departure city are validated transiently and are not persisted or sent. Quote snapshots store only chosen travel options, prices and exclusions.
+All sample prices must be clearly identified as estimates, not confirmed supplier prices.
+
+## Testing and Verification
+
+The project has undergone a code review and feature audit. The audit identified working catalogue features as well as incomplete features in comparison, pricing and checkout.
+
+The following checks should be performed before the final project demonstration:
+
+1. Open the website using the local Python server.
+2. Check the Home, Destinations and Packages pages.
+3. Test destination and package search and filters.
+4. Open individual destination and package details.
+5. Test the comparison page and its selection limits.
+6. Check whether traveller and trip options update prices correctly.
+7. Test the booking form with sample information.
+8. Check whether booking data is saved and displayed correctly.
+9. Test confirmation and booking history after refreshing the page.
+10. Check the website at desktop and mobile screen sizes.
+11. Open browser Developer Tools and check for JavaScript errors.
+
+Do not report a test as passed unless it has actually been performed.
+
+## Storage and Privacy
+
+The project uses browser LocalStorage for supported demo features.
+
+- Stored data remains in the current browser.
+- Clearing browser storage may remove saved demo records.
+- Data is not automatically synchronised across devices.
+- LocalStorage is not a replacement for a secure backend database.
+- The prototype does not provide production-level account or booking security.
 
 ## Group
 
@@ -141,10 +192,25 @@ Data remains in the current browser. Browser clearing removes it. If storage is 
 
 Supervisor: Satyaprakash Singh. Program: B.Tech CSE 3rd Year.
 
-## Next production phase
+## Future Scope
 
-Build a backend with supplier catalogue and inventory, date/origin-aware transport search, named hotels, final tax/fee calculation, cancellation policy and quote expiry. The server must validate options and compute the final price; browser localStorage is not authoritative. Integrate a hosted payment gateway only after those pieces exist, verify signed webhooks and prevent duplicate payment/booking actions. Add authentication, secure bookings, refunds, supplier allocation and receipts. Never collect card credentials in this frontend.
+The project can be improved in the following areas:
 
-## Browser verification limitation
+1. Implement dynamic comparison of up to three travel packages.
+2. Develop a complete traveller-based pricing calculation system.
+3. Add configurable accommodation, transport and meal options.
+4. Implement island and international destination travel rules.
+5. Develop a proper two-stage booking and checkout process.
+6. Make confirmation and booking history fully dynamic.
+7. Improve itinerary creation and management.
+8. Add a backend database and secure user authentication.
+9. Integrate verified travel suppliers and live availability.
+10. Integrate a secure hosted payment gateway in a future production version.
 
-A browser executable was not installed in this environment, and downloading Chromium timed out. Desktop/mobile visual checks and end-to-end browser interaction could not be completed here. The manual walkthrough above (in README.md) remains the final presentation check. Automated Node logic tests and static-server HTTP checks were completed; they do not replace visual/browser testing.
+## Project Conclusion
+
+Roam India demonstrates how HTML5, CSS3 and Vanilla JavaScript can be used to build a responsive travel and tour management frontend.
+
+The current implementation provides destination and package browsing, catalogue interactions and selected browser-based demo features. Comparison, complete pricing and checkout functionality remain areas for further development.
+
+The project provides a foundation for a more complete travel management platform with backend integration and real-world services in the future.
